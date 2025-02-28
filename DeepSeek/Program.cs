@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
+
 class Program
 {
     private static readonly string configFilePath = "config.json"; // 配置文件路径
@@ -25,7 +26,6 @@ class Program
             Console.WriteLine("无法加载配置文件，请检查config.json文件是否存在且格式正确。");
             return;
         }
-
         do
         {
             // 获取输入文本
@@ -41,13 +41,20 @@ class Program
                 inputText = Console.ReadLine();
             }
 
+            //检查是否为null
+            if(inputText == null) 
+            {
+                Console.WriteLine("错误：输入的请求文本为空");
+                continue;
+            }
+
             // 检查输入长度
             if (inputText.Length > maxInputLength)
             {
                 Console.WriteLine($"输入文本长度超过{maxInputLength}字符，请缩短后重试。");
                 continue;
             }
-
+            Console.WriteLine("=======================================");
             // 启动Loading动画
             isLoading = true;
             var loadingTask = Task.Run(() => ShowLoadingAnimation());

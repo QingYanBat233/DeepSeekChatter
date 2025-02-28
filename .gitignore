@@ -1,2 +1,3 @@
 .vs/
-DeepSeek/bin/Debug/net8.0/
+DeepSeek/bin/
+DeepSeek/obj/
