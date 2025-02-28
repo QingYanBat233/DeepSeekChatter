@@ -1,5 +1,5 @@
 # DeepSeekChatter
-这是一个使用C#开发的 通过deepseek ai与deepseek对话的程序
+这是一个使用C#开发的 通过deepseek api与deepseek对话的程序
 ## 使用教程
 - 使用Visual Studio 2022打开
 - 构建程序
