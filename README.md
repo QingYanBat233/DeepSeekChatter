@@ -14,6 +14,6 @@
 - apiKey : 你的deepseek apikey
 - maxInputLength : 最高输入的字符数
 - maxOutputTokens : 最高输出token 超过的部分将不会输出
-## 程序问题
-- 不支持读取上下文
-- 错误处理机制不完善
+## 提示
+- 本程序不支持读取上下文
+- 错误处理机制并不完善
